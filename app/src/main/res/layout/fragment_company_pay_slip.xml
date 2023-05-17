@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_update_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_500"
+                android:padding="10dp"
+                android:textSize="@dimen/text_small"
+                android:text="更新员工列表"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:text="姓名"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_color"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:text="工号"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_color"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:text="工资"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="取消选择"
+                android:gravity="center"
+                android:textSize="@dimen/text_middle"
+                android:background="@color/teal_700"/>
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="发送"
+                android:gravity="center"
+                android:textSize="@dimen/text_middle"
+                android:background="@color/purple_500"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
